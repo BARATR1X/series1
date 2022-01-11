@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: rgb(34,193,195);
+background: linear-gradient(93deg, rgba(34,193,195,1) 0%, rgba(45,87,253,1) 100%);
+  /*background-image: url(../img/Background.jpg);
+  background-attachment:scroll ;
+  */
+}
+
+.navegar {
+  display: flex;
+  background-color: rgba(59, 111, 124, 0.37);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.menu h1 {
+  border-bottom:1px solid whitesmoke;
+  font-size: 100px;
+}
+
+.menu h1 span {  
+  color: rgba(54, 12, 131, 0.404);
+}
+
+@media (max-width: 1272px) {
+  .menu h1{
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 979px) {
+  .menu h1{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu h1{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu h1{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 654px) {
+  .menu h1{
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 362px) {
+  .menu h1{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 334px) {
+  .menu h1{
+    font-size: 15px;
+  }
+}
+
+
+
+.menu h1 span:hover {
+  color: cornsilk;
+  transition: 1000ms ease;
+}
+
+
+.menu img {
+  width: 100PX;
+  margin: 20PX 0 20PX 20PX;
+}
+
+
+@media (max-width: 654px) {
+  .menu img{
+    width: 50PX;
+    margin: 0 ;
+  }
+}
+
+
+@media (max-width: 362px) {
+  .menu img{
+    width: 30PX;
+    margin: 0 ;
+  }
+}
+
+/* -------------------------SUB-MENU------------------------*/
+.sub-menu {
+  display: flex;
+  align-items: center;
+  width: 30%; 
+  justify-content: space-between;
+  margin-right: 100px;
+}
+
+.sub-menu .icones {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgba(54, 12, 131, 0.404);
+  border-bottom:1px solid cornsilk;  
+  border-right: 1px solid cornsilk;
+}
+
+@media (max-width: 1272px) {
+  .sub-menu .icones{
+    padding: 5px;
+  }
+}
+
+@media (max-width: 985px) {
+  .sub-menu .icones{
+    display: none;
+  }
+}
+
+.sub-menu .icones:hover {
+  background-color: cornsilk;
+  border-bottom: 3px solid rgba(54, 12, 131);
+  border-right: 3px solid rgba(54, 12, 131);
+  transition: 1000ms ease;
+}
+
+.sub-menu1 {
+  display: flex;
+  align-items: center;
+}
+ 
+.sub-menu1 input {
+  background-color: rgba(54, 12, 131, 0.404);
+  color: cornsilk;
+  padding: 10px;
+  border: none;
+  border-bottom:1px solid cornsilk ;  
+}
+
+@media (max-width: 749px) {
+  .sub-menu1 .busca {
+    display: none;       
+  }
+}
+
+/* -------------------------LANÇAMENTOS------------------------*/
+
+.lancamentos {
+  margin: 20px;
+  display: flex;
+  justify-content: center;  
+}
+
+@media (max-width:650px) {
+  .lancamentos {    
+    display: grid;    
+  }
+}
+
+/* --------------LANÇAMENTOS----LOGO--------------------*/
+
+.lancamentos .img {  
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid cornsilk;
+}
+
+@media (max-width:819px) {
+  .lancamentos .img {  
+    margin: 0 auto;
+    width: 200px;
+  }
+}
+
+@media (max-width:630px) {
+  .lancamentos .img {  
+    margin: 0 auto;
+    width: 150px;
+  }
+}
+
+@media (max-width:650px) {
+  .lancamentos .img {  
+    margin: 0 auto;
+    width: 500px;
+  }
+}
+
+@media (max-width:540px) {
+  .lancamentos .img {
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
+@media (max-width:360px) {
+  .lancamentos .img {
+    margin: 0 auto;
+    width: 280px;
+    margin-bottom: -90px;
+    margin-top: -90px;
+  }
+}
+
+/* --------------LANÇAMENTOS------------------------*/
+
+.lancamentos .interacao .lista {
+  text-align: center;
+  flex-direction: column;  
+}
+
+.lancamentos .interacao1{
+  border-right: 1px solid cornsilk;
+  border-left: 1px solid cornsilk;
+}
+
+
+/* --------------LANÇAMENTOS--FUNDO--------------------*/
+
+.lancamentos .interacao {
+  border-top:1px solid cornsilk;
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lancamentos .interacao {
+  background-color: rgba(59, 111, 124, 0.37);  
+  width: 33%;  
+}
+
+@media (max-width: 1272px) {
+  .lancamentos .interacao  {
+    width: 33%;
+  }
+}
+
+@media (max-width: 650px) {
+  .lancamentos .interacao  {
+    margin: 0 auto;
+    width: 99%;
+  }
+}
+
+
+
+/* --------------LANÇAMENTOS----TEXTO--------------------*/
+
+.lancamentos .interacao h3 {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;  
+}
+
+.lancamentos .interacao .lista a h3 {
+  border-top:1px solid cornsilk;
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 1272px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 230px;
+  }
+}
+
+@media (max-width: 800px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 200px;
+  }
+}
+
+@media (max-width:690px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 180px;
+  }
+}
+
+@media (max-width:650px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 390px;
+    text-align: center;
+  }
+}
+
+@media (max-width:540px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 390px;
+  }
+}
+
+@media (max-width:430px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 260px;
+  }
+}
+
+@media (max-width:360px) {
+  .lancamentos .interacao .lista a h3 {
+    width: 300px;
+  }
+}
+
+
+/* --------------LANÇAMENTOS----IMAGEM--------------------*/
+
+
+.lancamentos .interacao .lista img {
+  width: 400px;
+  margin-top: 10px;  
+}
+
+@media (max-width: 1272px) {
+  .lancamentos .interacao .lista img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 980px) {
+  .lancamentos .interacao .lista img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .lancamentos .interacao .lista img {
+    width: 100px;
+  }
+}
+
+@media (max-width:650px) {
+  .lancamentos .interacao .lista img {
+    width: 500px;
+  }
+}
+
+@media (max-width:540px) {
+  .lancamentos .interacao .lista img {
+    width: 390px;
+  }
+}
+
+@media (max-width:400px) {
+  .lancamentos .interacao .lista img {
+    width: 260px;
+  }
+}
+
+@media (max-width:360px) {
+  .lancamentos .interacao .lista img {
+    width: 295px;
+  }
+}
+
+
+ 
+
